@@ -27,9 +27,13 @@ Our method gradually enables effective control by weak conditions, thereby achie
 - [2024/05/23] 🔥 We release the code and models.
 
 ## Installation
-
+CORRECTION FOR SEQUENCE OF INSTALL and ADDED missing dependencies *gjnave
 ```
 # install requirements
+(if using NVIDIA)
+conda install -c nvidia cudatoolkit==11.8.0 (or) 12.1.0
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+pip3 install -U xformers --index-url https://download.pytorch.org/whl/cu118
 pip install diffusers==0.24.0
 pip install imageio-ffmpeg==0.4.9
 pip install insightface==0.7.3
@@ -42,6 +46,8 @@ pip install torchvision==0.15.2
 pip install transformers==4.30.2
 pip install einops==0.4.1
 pip install tqdm==4.66.1
+pip install PyAV
+
 
 # download the codes
 git clone https://github.com/tencent-ailab/V-Express
