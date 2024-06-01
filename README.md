@@ -40,9 +40,6 @@ pip install insightface==0.7.3
 pip install omegaconf==2.2.3
 pip install onnxruntime==1.16.3
 pip install safetensors==0.4.2
-pip install torch==2.0.1
-pip install torchaudio==2.0.2
-pip install torchvision==0.15.2
 pip install transformers==4.30.2
 pip install einops==0.4.1
 pip install tqdm==4.66.1
